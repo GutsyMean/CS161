@@ -1,3 +1,4 @@
+6 
 6 3 filled
 3 6 unfilled
 4 4 filled

@@ -19,9 +19,7 @@ public class Rectangle
 		this.numRows = numRows;
 		this.numCols = numCols;
 	}
-	
 
-	
 	 
 	public int getRows()
 	{
@@ -31,6 +29,11 @@ public class Rectangle
 	public int getCols()
 	{
 		return numCols;
+	}
+	
+	public boolean getFilled()
+	{
+		return filled;
 	}
 	
 	public void setRows(int numRows)
@@ -43,16 +46,61 @@ public class Rectangle
 		this.numCols = numCols;
 	}
 	
+	public void setFilled(boolean filled)
+	{
+		this.filled = filled;
+	}
 	
 	public String toString()
 	{
-		for (int i=1; i<numRows; i++)
+		String s = "Output: \n";
+//				"numRows = "+numRows+", numCols = "+numCols+", filled = "+filled+"\n";
+		if (filled)
 		{
-			for (int j=1; j<numCols; j++)
+			for (int i=0; i<numRows ; i++)
 			{
-				str = "#";
+				for (int j=0; j<numCols; j++)
+				{
+					s = s + "# ";
+				}
+				s = s + "\n";
 			}
 		}
-		return str;
+		else
+		{
+			for (int i=0; i<numRows ; i++)
+			{
+				for (int j=0; j<numCols; j++)
+				{
+					if (i==0 || i == numRows-1)
+					{
+						s = s + "# ";
+					}
+					else
+					{
+						if (j==0 || j==numCols-1)
+						{
+							s = s + "# ";
+						}
+						else
+						{
+							s = s + "  ";
+						}
+					}
+				}
+				s = s + "\n";
+			}
+		}
+		return s;
 	}
+
+//		for (int i=1; i<numRows; i++)
+//		{
+//			for (int j=1; j<numCols; j++)
+//			{
+//				str = "#";
+//			}
+//		}
+//		return str;
+//	}
 }
