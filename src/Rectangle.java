@@ -20,7 +20,7 @@ public class Rectangle
 		this.numCols = numCols;
 	}
 	
-	
+
 	 
 	public int getRows()
 	{

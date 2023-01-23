@@ -7,5 +7,5 @@ public class Lab1ADriver
 		Rectangle[] rectangle = new Rectangle[];
 	}
 	
-	
+
 }
