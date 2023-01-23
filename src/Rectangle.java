@@ -21,7 +21,7 @@ public class Rectangle
 	}
 	
 	
-	
+	 
 	public int getRows()
 	{
 		return numRows;
